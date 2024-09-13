@@ -1,6 +1,6 @@
 # Federated Learning Simulation
 
-This repository contains a Federated Learning simulation framework that simulates clients training locally and sending their model updates to a central server for aggregation. The framework is based on `Hydra` and uses custom modules for dataset preparation, client-side training, and server-side aggregation.
+This repository contains a Federated Learning simulation framework that simulates clients' training locally and sends their model updates to a central server for aggregation. The framework is based on `Hydra` and uses custom modules for dataset preparation, client-side training, and server-side aggregation.
 
 ## Features
 - **Client-Server Architecture:** Simulates federated learning using clients and a central server.
@@ -26,3 +26,4 @@ pip install -r requirement.txt
 
 ##Configuration File
 The parameters for the training process are defined in a YAML file located in the conf directory. The file used is named base.yaml
+you need to define the parameters in this file to make the running easier. 
