@@ -21,3 +21,8 @@ You can install the required dependencies using the following command:
 
 pip install -r requirement.txt
 
+
+
+
+##Configuration File
+The parameters for the training process are defined in a YAML file located in the conf directory. The file used is named base.yaml
