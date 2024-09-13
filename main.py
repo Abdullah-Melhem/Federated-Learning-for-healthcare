@@ -24,8 +24,7 @@ def main(cfg: DictConfig):
         sim_clt[clt_name] = Client(trainloder=trainloaders[clt], valloader=validationloaders[clt],
                                    num_class=cfg.num_class)
 
-    print("The [10] participants names:", sim_clt.keys())
-
+    print(f"The {cfg.num_clients} participants names:", sim_clt.keys())
     """prepare the server"""
     server = Server(cfg.num_class)
 
