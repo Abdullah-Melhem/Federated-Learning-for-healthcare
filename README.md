@@ -22,9 +22,9 @@ This is the file name: heart_2022_no_nans.csv
 
 # running process:
  - Download the repository and the requirement.txt file.
- - go to the conf file and change the yamel file. [the dataset path, model_type_one_cluster, target_clt, etc.]
- - then run the main file as is.
- - you will see, the evaluation after each round.
+ - Go to the conf file and change the yamel file. [the dataset path, model_type_one_cluster, target_clt, etc.]
+ - Then run the main file as is.
+ - You will see, the evaluation after each round.
 
 You can install the required dependencies using the following command:
 
