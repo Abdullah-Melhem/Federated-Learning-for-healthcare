@@ -1,11 +1,11 @@
-
+model_type_one_cluster : "cnn"
 num_clients: 10
 number_of_rounds: 10
 batch_size : 10
-val_ratio : 0.1
 target_clt: "Hospital"
-num_class: 10
-data_path: "./data"
+num_class: 2
+train_data_ratio: 0.8
+data_path: "./data/heart_2022_no_nans.csv"
 tr_confg:
     lr: 0.001
     momentum: 0.1
