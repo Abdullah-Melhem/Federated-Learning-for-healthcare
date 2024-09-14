@@ -14,19 +14,20 @@ def main(cfg: DictConfig):
 
     """prepare the data loader"""
     trainloaders, validationloaders, testloader = prepare_dataset(
-        cfg.num_clients, cfg.batch_size, cfg.val_ratio, cfg.data_path
+        cfg.num_clients, cfg.batch_size, cfg.train_data_ratio, cfg.data_path, cfg.target_clt
     )
 
     """prepare the clients"""
     sim_clt = {}
     for clt in range(cfg.num_clients):
         clt_name = cfg.target_clt + "-" + str(clt)
-        sim_clt[clt_name] = Client(trainloder=trainloaders[clt], valloader=validationloaders[clt],
+        sim_clt[clt_name] = Client(cfg.model_type_one_cluster,trainloder=trainloaders[clt], valloader=validationloaders[clt],
                                    num_class=cfg.num_class)
 
     print(f"The {cfg.num_clients} participants names:", sim_clt.keys())
+
     """prepare the server"""
-    server = Server(cfg.num_class)
+    server = Server(cfg.model_type_one_cluster,cfg.num_class)
 
     for round in range(cfg.number_of_rounds):
         """ initialize and broadcast  the weights"""
