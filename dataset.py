@@ -25,15 +25,8 @@ def prepare_dataset(num_partitions: int = 10, batch_size: int = 5, val_ratio: fl
     # split trainset into `num_partitions` trainsets (one per client)
     # figure out number of training examples per partition
     num_images = len(trainset) // num_partitions
-
-    # a list of partition lenghts (all partitions are of equal size)
+   
     partition_len = [num_images] * num_partitions
-    # split randomly. This returns a list of trainsets, each with `num_images` training examples
-    # Note this is the simplest way of splitting this dataset. A more realistic (but more challenging) partitioning
-    # would induce heterogeneity in the partitions in the form of for example: each client getting a different
-    # amount of training examples, each client having a different distribution over the labels (maybe even some
-    # clients not having a single training example for certain classes). If you are curious, you can check online
-    # for Dirichlet (LDA) or pathological dataset partitioning in FL. A place to start is: https://arxiv.org/abs/1909.06335
     trainsets = random_split(
         trainset, partition_len, torch.Generator().manual_seed(2023)
     )
@@ -62,14 +55,7 @@ def prepare_dataset(num_partitions: int = 10, batch_size: int = 5, val_ratio: fl
             DataLoader(for_val, batch_size=batch_size, shuffle=False, num_workers=2)
         )
 
-    # We leave the test set intact (i.e. we don't partition it)
-    # This test set will be left on the server side and we'll be used to evaluate the
-    # performance of the global model after each round.
-    # Please note that a more realistic setting would instead use a validation set on the server for
-    # this purpose and only use the testset after the final round.
-    # Also, in some settings (specially outside simulation) it might not be feasible to construct a validation
-    # set on the server side, therefore evaluating the global model can only be done by the clients. (see the comment
-    # in main.py above the strategy definition for more details on this)
+   
     testloader = DataLoader(testset, batch_size=128)
 
     return trainloaders, valloaders, testloader
