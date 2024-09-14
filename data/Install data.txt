@@ -1,0 +1,2 @@
+download the dataset from this Kaggle repo. "https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease/data"
+this is the file name: heart_2022_no_nans.csv
