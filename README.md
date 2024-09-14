@@ -1,4 +1,4 @@
-# Federated Learning Simulation
+# Federated Learning Simulation For Healthcare records-based data
 
 This repository contains a Federated Learning simulation framework that simulates clients' training locally and sends their model updates to a central server for aggregation. The framework is based on `Hydra` and uses custom modules for dataset preparation, client-side training, and server-side aggregation.
 
@@ -20,7 +20,11 @@ This repository contains a Federated Learning simulation framework that simulate
 download the dataset from this Kaggle repo. "https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease/data"
 This is the file name: heart_2022_no_nans.csv
 
-
+# running process:
+ - Download the repository and the requirement.txt file.
+ - go to the conf file and change the yamel file. [the dataset path, model_type_one_cluster, target_clt, etc.]
+ - then run the main file as is.
+ - you will see, the evaluation after each round.
 
 You can install the required dependencies using the following command:
 
