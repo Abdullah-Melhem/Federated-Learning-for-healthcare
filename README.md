@@ -35,4 +35,6 @@ pip install -r requirement.txt
 
 ##Configuration File
 The parameters for the training process are defined in a YAML file located in the conf directory. The file used is named base.yaml
-you need to define the parameters in this file to make the running easier. 
+You need to define the parameters in this file to make running it easier. 
+
+** you may find some functions in this code unrelated to this repo. please leave them as is, 
