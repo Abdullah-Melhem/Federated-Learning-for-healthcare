@@ -4,10 +4,11 @@ This repository contains a Federated Learning simulation framework that simulate
 
 ## Features
 - **Client-Server Architecture:** Simulates federated learning using clients and a central server.
-- **Customizable Configurations:** Uses `Hydra` for easy configuration of various hyperparameters and settings.
+- **Customizable Configurations:** Uses `Hydra` to easily configure various hyperparameters and settings.
 - **Federated Averaging (FedAvg):** Implements the standard FedAvg algorithm for model aggregation.
 - **Data Preparation:** Includes functionality to split and prepare datasets for clients.
 - **Performance Tracking:** Logs accuracy and loss after each training round.
+- - **Final Performance:** representable performance monitoring.
 
 ## Getting Started
 
