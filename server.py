@@ -130,7 +130,7 @@ def apply_feature_squeezing_fn(input_data: torch.Tensor, bit_depth: int = 5, smo
     return smoothed_data
 
 
-# Function to determine if a record is adversarial
+# Function to determine if a record is adversarial, this function will not be used in this repo.
 def is_adversarial_fn(input_data: torch.Tensor, model, feature_sq_conf):
     """Classify if a record is adversarial based on feature squeezing."""
 
