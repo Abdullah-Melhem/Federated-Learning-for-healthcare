@@ -8,7 +8,7 @@ This repository contains a Federated Learning simulation framework that simulate
 - **Federated Averaging (FedAvg):** Implements the standard FedAvg algorithm for model aggregation.
 - **Data Preparation:** Includes functionality to split and prepare datasets for clients.
 - **Performance Tracking:** Logs accuracy and loss after each training round.
-- - **Final Performance:** representable performance monitoring.
+- **Final Performance:** representable performance monitoring.
 
 ## Getting Started
 
