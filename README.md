@@ -18,7 +18,7 @@ This repository contains a Federated Learning simulation framework that simulate
 - `omegaconf`
 
 # Data Set :
-download the dataset from this Kaggle repo. "https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease/data"
+Download the dataset from this Kaggle repo. "https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease/data"
 This is the file name: heart_2022_no_nans.csv
 
 # running process:
