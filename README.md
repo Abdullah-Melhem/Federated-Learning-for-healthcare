@@ -17,7 +17,7 @@ This repository contains a Federated Learning simulation framework that simulate
 - `hydra-core`
 - `omegaconf`
 
-# Data Set :
+# Data Set
 Download the dataset from this Kaggle repo. "https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease/data"
 This is the file name: heart_2022_no_nans.csv
 
