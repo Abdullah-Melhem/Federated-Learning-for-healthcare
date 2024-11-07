@@ -21,7 +21,7 @@ This repository contains a Federated Learning simulation framework that simulate
 Download the dataset from this Kaggle repo. "https://www.kaggle.com/datasets/kamilpytlak/personal-key-indicators-of-heart-disease/data"
 This is the file name: heart_2022_no_nans.csv
 
-# running process:
+# running process
  - Download the repository and the requirement.txt file.
  - Go to the conf file and change the yamel file. [the dataset path, model_type_one_cluster, target_clt, etc.]
  - Then run the main file as is.
